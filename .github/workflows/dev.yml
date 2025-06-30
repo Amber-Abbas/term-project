@@ -1,0 +1,20 @@
+name: Development Workflow
+on:
+  push:
+    branches: [ develop ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    envirnvonment: development-e
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - run: npm install -g parcel
+      - run: npm install
+      - run: npx htmlhint '**/*.html'
+      - run: npx stylelint '**/*.css'
+      - run: parcel build index.html
+
