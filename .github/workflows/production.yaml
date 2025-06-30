@@ -1,0 +1,19 @@
+name: Production Workflow
+on:
+  push:
+    branches: [ production ]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production-env
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - run: npm install -g parcel
+      - run: npm install
+      - run: npx htmlhint '**/*.html'
+      - run: npx stylelint '**/*.css'
+      - run: parcel build index.html
