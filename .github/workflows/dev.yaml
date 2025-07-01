@@ -2,8 +2,11 @@ name: Development Workflow
 
 on:
   push:
-    branches: [develop]
-
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
 
 jobs:
   build-and-deploy:
