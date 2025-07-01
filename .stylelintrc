@@ -3,12 +3,12 @@
     "block-no-empty": true,
     "color-no-invalid-hex": true,
     "declaration-block-no-duplicate-properties": true,
-    "declaration-block-trailing-semicolon": "always",
     "font-family-no-duplicate-names": true,
     "function-url-quotes": "always",
     "media-feature-name-no-unknown": true,
     "no-descending-specificity": true,
     "property-no-unknown": true,
-    "selector-pseudo-element-no-unknown": true
+    "selector-pseudo-element-no-unknown": true,
+    "declaration-block-semicolon-newline-after": "always"
   }
 }
