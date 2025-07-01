@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:css": "stylelint '**/*.css'",
+    "lint:css": "stylelint \"styles/**/*.css\"",
     "lint:html": "htmlhint ."
   },
   "repository": {
