@@ -33,8 +33,7 @@ jobs:
         run: npm run lint:css
 
       - name: Build Project with Parcel
-        run: npx parcel build src/index.html styles/style.css --dist-dir dist
-
+        run: npx parcel build src/index.html --dist-dir dist
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/develop'
         uses: peaceiris/actions-gh-pages@v3
