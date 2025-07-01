@@ -1,14 +1,14 @@
 {
   "rules": {
-    "color-no-invalid-hex": true,
-    "font-family-no-duplicate-names": true,
     "block-no-empty": true,
-    "unit-no-unknown": true,
+    "color-no-invalid-hex": true,
     "declaration-block-no-duplicate-properties": true,
-    "selector-type-no-unknown": true,
-    "no-extra-semicolons": true,
+    "declaration-block-trailing-semicolon": "always",
+    "font-family-no-duplicate-names": true,
+    "function-url-quotes": "always",
+    "media-feature-name-no-unknown": true,
+    "no-descending-specificity": true,
     "property-no-unknown": true,
-    "selector-pseudo-element-no-unknown": true,
-    "string-no-newline": true
+    "selector-pseudo-element-no-unknown": true
   }
 }
