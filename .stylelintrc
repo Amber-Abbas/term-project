@@ -1,10 +1,15 @@
 {
+  "extends": "stylelint-config-standard",
   "rules": {
     "block-no-empty": true,
     "color-no-invalid-hex": true,
     "declaration-block-no-duplicate-properties": true,
+    "no-duplicate-selectors": true,
+    "value-keyword-case": "lower",
+    "selector-type-case": "lower",
+    "font-family-no-duplicate-names": true,
+    "no-empty-source": true,
     "selector-max-id": 1
-    // other valid rules here
   }
 }
 
