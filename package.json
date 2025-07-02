@@ -4,7 +4,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint:css": "stylelint '**/*.css'",
-    "lint:html": "./node_modules/.bin/htmlhint ."
+    "lint:html": "npx --no-install htmlhint ."
   },
   "repository": {
     "type": "git",

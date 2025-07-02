@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Run HTMLHint
-        run: npm run lint:html  # or use ./node_modules/.bin/htmlhint . directly
+        run: npm run lint:html
 
       - name: Run Stylelint
         run: npm run lint:css
