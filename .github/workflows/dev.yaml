@@ -32,7 +32,7 @@ jobs:
         run: npm run lint:css
 
       - name: Build Project with Parcel
-        run: npx parcel build src/index.html --dist-dir dist
+        run: npx parcel build src/*.html --dist-dir build --public-url /term-project/
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/develop'
