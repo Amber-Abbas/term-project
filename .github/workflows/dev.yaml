@@ -24,8 +24,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Fix permissions for htmlhint
+        run: chmod +x ./node_modules/.bin/htmlhint
+
       - name: Run HTMLHint
-        run: npm run lint:html
+        run: ./node_modules/.bin/htmlhint .
 
       - name: Run Stylelint
         run: npm run lint:css
