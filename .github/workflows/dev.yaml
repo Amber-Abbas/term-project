@@ -2,12 +2,15 @@ name: Development Workflow
 
 on:
   push:
-    branches: [develop]
-
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
 
 jobs:
   build-and-deploy:
-    name: Lint, Build & Deploy to Development Environment
+    name: build-and-deploy
     runs-on: ubuntu-latest
     environment: development-env
 
