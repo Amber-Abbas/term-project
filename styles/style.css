@@ -17,3 +17,18 @@ h1 {
   background-color: #fff;
   border: 1px solid #333;
 }
+
+.about-section {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.about-section h1 {
+  color: #007acc;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1rem;
+}
