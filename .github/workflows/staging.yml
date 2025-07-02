@@ -36,7 +36,7 @@ jobs:
 
       # Build Project with Parcel
       - name: Build Project with Parcel
-        run: npx parcel build src/index.html --dist-dir dist
+        run: npx parcel build src/*.html --dist-dir build --public-url /term-project/
 
       # Deploy to GitHub Pages (Staging)
       - name: Deploy to Staging
