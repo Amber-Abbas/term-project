@@ -1,6 +1,9 @@
 name: Development Workflow
 
 on:
+  push:
+    branches:
+      - develop
   pull_request:
     branches:
       - develop
@@ -25,7 +28,7 @@ jobs:
 
       - name: Run HTMLHint
         run: npx htmlhint .
-     
+
       - name: Run Stylelint
         run: npm run lint:css
 
