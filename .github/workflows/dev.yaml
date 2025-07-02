@@ -12,7 +12,6 @@ jobs:
   build-and-deploy:
     name: build-and-deploy
     runs-on: ubuntu-latest
-    environment: development-env
 
     steps:
       - name: Checkout Repository
