@@ -28,7 +28,7 @@ jobs:
         run: chmod +x ./node_modules/.bin/htmlhint
 
       - name: Run HTMLHint
-        run: ./node_modules/.bin/htmlhint .
+        run: npm run lint:html
 
       - name: Run Stylelint
         run: npm run lint:css
